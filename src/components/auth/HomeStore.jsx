@@ -38,7 +38,7 @@ function HeroBanner({ data }) {
 
   return (
     <div
-      className={`flex h-64 items-center justify-center overflow-hidden rounded-2xl bg-neutral-50 ${
+      className={`relative grid aspect-[1440/560] w-full shrink-0 place-items-center self-stretch overflow-hidden rounded-2xl bg-neutral-50 ${
         bannerImageUrl
           ? "border border-neutral-200"
           : "border border-dashed border-neutral-200"
@@ -48,7 +48,7 @@ function HeroBanner({ data }) {
         <img
           src={bannerImageUrl}
           alt="Promotional banner"
-          className="h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
         />
       ) : (
         <p className="text-sm text-neutral-400">no banner data available</p>
