@@ -4,7 +4,7 @@ import {
   RefreshCw,
 } from "lucide-react";
 
-import WebAssetCard from "@/components/admin/webAsset/WebAssetCard";
+import WebAssetCard from "@/components/admin/webasset/WebAssetCard";
 import GlobalLoading from "@/components/loading/GlobalLoading";
 
 import { useWebAssets } from "@/hook/webAsset/useWebAssets";
